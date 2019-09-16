@@ -1,0 +1,4 @@
+<launch>
+    <node name="talker" pkg="beginner_tutorials" type="record" args="/home/dji/catkin_ws_uco/data/Data5/" />
+</launch>
+

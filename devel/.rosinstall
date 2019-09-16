@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/dji/catkin_ws_uco/devel/setup.sh

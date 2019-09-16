@@ -1,0 +1,4 @@
+<launch>
+    <node name="talker" pkg="beginner_tutorials" type="talker" args="/home/dji/catkin_ws_uco/data/markermap_floor.yml /home/dji/catkin_ws_uco/data/pg.yml /home/dji/catkin_ws_uco/data/orb.fbow /home/dji/catkin_ws_uco/data/Map/1.map /home/dji/catkin_ws_uco/data/Data4/1.txt /home/dji/catkin_ws_uco/data/Data4/" />
+</launch>
+

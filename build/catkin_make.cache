@@ -1,0 +1,2 @@
+beginner_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/dji/catkin_ws_uco/devel -DCMAKE_INSTALL_PREFIX=/home/dji/catkin_ws_uco/install -G Unix Makefiles
