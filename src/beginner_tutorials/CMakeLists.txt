@@ -82,7 +82,7 @@ LIST(APPEND LINK_LIBS
 )
   
 #add_executable(talker src/talker.cpp)
-add_executable(talker src/pg_map.cpp include/pointgreyStream.h )
+add_executable(talker src/pg_map_exposure.cpp include/pointgreyStream.h )
 target_link_libraries(talker ${catkin_LIBRARIES} ${LINK_LIBS} )  
 message(STATUS"${catkin_LIBRARIES}")
 add_dependencies(talker beginner_tutorials_generate_messages_cpp)
@@ -92,6 +92,7 @@ add_executable(record src/record.cpp include/pointgreyStream.h)
 target_link_libraries(record ${catkin_LIBRARIES} ${LINK_LIBS} )
 add_dependencies(record beginner_tutorials_generate_messages_cpp)
 
+add_executable(img2video src/img2video.cpp )
 
 
 

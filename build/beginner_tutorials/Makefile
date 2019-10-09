@@ -78,17 +78,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -99,6 +88,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
@@ -111,17 +111,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -132,6 +121,17 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -194,21 +194,6 @@ roscpp_generate_messages_py: beginner_tutorials/CMakeFiles/roscpp_generate_messa
 roscpp_generate_messages_py/fast:
 	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build.make beginner_tutorials/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
@@ -420,32 +405,89 @@ record/fast:
 	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/record.dir/build.make beginner_tutorials/CMakeFiles/record.dir/build
 .PHONY : record/fast
 
-src/pg_map.o: src/pg_map.cpp.o
+# Convenience name for target.
+beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
-.PHONY : src/pg_map.o
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make beginner_tutorials/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+beginner_tutorials/CMakeFiles/img2video.dir/rule:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f CMakeFiles/Makefile2 beginner_tutorials/CMakeFiles/img2video.dir/rule
+.PHONY : beginner_tutorials/CMakeFiles/img2video.dir/rule
+
+# Convenience name for target.
+img2video: beginner_tutorials/CMakeFiles/img2video.dir/rule
+
+.PHONY : img2video
+
+# fast build rule for target.
+img2video/fast:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/img2video.dir/build.make beginner_tutorials/CMakeFiles/img2video.dir/build
+.PHONY : img2video/fast
+
+src/img2video.o: src/img2video.cpp.o
+
+.PHONY : src/img2video.o
 
 # target to build an object file
-src/pg_map.cpp.o:
-	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o
-.PHONY : src/pg_map.cpp.o
+src/img2video.cpp.o:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/img2video.dir/build.make beginner_tutorials/CMakeFiles/img2video.dir/src/img2video.cpp.o
+.PHONY : src/img2video.cpp.o
 
-src/pg_map.i: src/pg_map.cpp.i
+src/img2video.i: src/img2video.cpp.i
 
-.PHONY : src/pg_map.i
+.PHONY : src/img2video.i
 
 # target to preprocess a source file
-src/pg_map.cpp.i:
-	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.i
-.PHONY : src/pg_map.cpp.i
+src/img2video.cpp.i:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/img2video.dir/build.make beginner_tutorials/CMakeFiles/img2video.dir/src/img2video.cpp.i
+.PHONY : src/img2video.cpp.i
 
-src/pg_map.s: src/pg_map.cpp.s
+src/img2video.s: src/img2video.cpp.s
 
-.PHONY : src/pg_map.s
+.PHONY : src/img2video.s
 
 # target to generate assembly for a file
-src/pg_map.cpp.s:
-	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.s
-.PHONY : src/pg_map.cpp.s
+src/img2video.cpp.s:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/img2video.dir/build.make beginner_tutorials/CMakeFiles/img2video.dir/src/img2video.cpp.s
+.PHONY : src/img2video.cpp.s
+
+src/pg_map_exposure.o: src/pg_map_exposure.cpp.o
+
+.PHONY : src/pg_map_exposure.o
+
+# target to build an object file
+src/pg_map_exposure.cpp.o:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o
+.PHONY : src/pg_map_exposure.cpp.o
+
+src/pg_map_exposure.i: src/pg_map_exposure.cpp.i
+
+.PHONY : src/pg_map_exposure.i
+
+# target to preprocess a source file
+src/pg_map_exposure.cpp.i:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.i
+.PHONY : src/pg_map_exposure.cpp.i
+
+src/pg_map_exposure.s: src/pg_map_exposure.cpp.s
+
+.PHONY : src/pg_map_exposure.s
+
+# target to generate assembly for a file
+src/pg_map_exposure.cpp.s:
+	cd /home/dji/catkin_ws_uco/build && $(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.s
+.PHONY : src/pg_map_exposure.cpp.s
 
 src/record.o: src/record.cpp.o
 
@@ -482,12 +524,11 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... install"
+	@echo "... rebuild_cache"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -502,11 +543,16 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... record"
-	@echo "... install/strip"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... img2video"
 	@echo "... install/local"
-	@echo "... src/pg_map.o"
-	@echo "... src/pg_map.i"
-	@echo "... src/pg_map.s"
+	@echo "... install/strip"
+	@echo "... src/img2video.o"
+	@echo "... src/img2video.i"
+	@echo "... src/img2video.s"
+	@echo "... src/pg_map_exposure.o"
+	@echo "... src/pg_map_exposure.i"
+	@echo "... src/pg_map_exposure.s"
 	@echo "... src/record.o"
 	@echo "... src/record.i"
 	@echo "... src/record.s"

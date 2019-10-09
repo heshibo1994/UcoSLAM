@@ -57,38 +57,38 @@ include beginner_tutorials/CMakeFiles/talker.dir/progress.make
 # Include the compile flags for this target's objects.
 include beginner_tutorials/CMakeFiles/talker.dir/flags.make
 
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o: beginner_tutorials/CMakeFiles/talker.dir/flags.make
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o: /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dji/catkin_ws_uco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o"
-	cd /home/dji/catkin_ws_uco/build/beginner_tutorials && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/talker.dir/src/pg_map.cpp.o -c /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map.cpp
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o: beginner_tutorials/CMakeFiles/talker.dir/flags.make
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o: /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map_exposure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dji/catkin_ws_uco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o"
+	cd /home/dji/catkin_ws_uco/build/beginner_tutorials && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o -c /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map_exposure.cpp
 
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/pg_map.cpp.i"
-	cd /home/dji/catkin_ws_uco/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map.cpp > CMakeFiles/talker.dir/src/pg_map.cpp.i
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/pg_map_exposure.cpp.i"
+	cd /home/dji/catkin_ws_uco/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map_exposure.cpp > CMakeFiles/talker.dir/src/pg_map_exposure.cpp.i
 
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/pg_map.cpp.s"
-	cd /home/dji/catkin_ws_uco/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map.cpp -o CMakeFiles/talker.dir/src/pg_map.cpp.s
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/pg_map_exposure.cpp.s"
+	cd /home/dji/catkin_ws_uco/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map_exposure.cpp -o CMakeFiles/talker.dir/src/pg_map_exposure.cpp.s
 
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.requires:
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.requires:
 
-.PHONY : beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.requires
+.PHONY : beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.requires
 
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.provides: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.requires
-	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.provides.build
-.PHONY : beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.provides
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.provides: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.requires
+	$(MAKE) -f beginner_tutorials/CMakeFiles/talker.dir/build.make beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.provides.build
+.PHONY : beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.provides
 
-beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.provides.build: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o
+beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.provides.build: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o
 
 
 # Object files for target talker
 talker_OBJECTS = \
-"CMakeFiles/talker.dir/src/pg_map.cpp.o"
+"CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o"
 
 # External object files for target talker
 talker_EXTERNAL_OBJECTS =
 
-/home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o
+/home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o
 /home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/build.make
 /home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libroscpp.so
 /home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
@@ -164,7 +164,7 @@ beginner_tutorials/CMakeFiles/talker.dir/build: /home/dji/catkin_ws_uco/devel/li
 
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/build
 
-beginner_tutorials/CMakeFiles/talker.dir/requires: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map.cpp.o.requires
+beginner_tutorials/CMakeFiles/talker.dir/requires: beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o.requires
 
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/requires
 

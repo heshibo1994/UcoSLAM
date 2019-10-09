@@ -16,7 +16,7 @@ opencv2/core/core.hpp
 opencv2/highgui/highgui.hpp
 -
 
-/home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map.cpp
+/home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map_exposure.cpp
 ros/ros.h
 /home/dji/catkin_ws_uco/src/beginner_tutorials/src/ros/ros.h
 unistd.h

@@ -1,1 +1,8 @@
-rosrun beginner_tutorials talker data/markermap_floor.yml data/pg.yml data/orb.fbow  data/Map/1.map  data/Data4/1.txt data/Data4/
+rosrun beginner_tutorials talker data/markermap_floor.yml data/pg.yml data/orb.fbow  data/Map/1.map  data/Data4/
+rosrun beginner_tutorials record data/Data4
+./img2video /home/wang/UcoSLAM/data/Data4 1 258
+
+
+
+
+

@@ -111,7 +111,6 @@ int main(int argc, char **argv)
         if (key == 27 || key == 'q' || key == 'Q') {  // ESC/Q
             break;
         }
-
 	    mypointgrey->getData();
         cv::Mat im =  mypointgrey->curr_image;
         //保存图像--------------------------------------------------------------6
@@ -122,7 +121,8 @@ int main(int argc, char **argv)
             t <<0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0;
         }
         else{
-            std::cerr<<"Frame "<<frameNumber<<endl;//" pose "<<posef2g<<std::endl;
+            std::cerr<<"Frame "<<frameNumber<<endl;
+            //cout<<" pose "<<posef2g<<std::endl;
             cv2eigen(posef2g,cam_pose_matrix);
             //坐标系转换××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××
             double distance =0.0;
@@ -139,8 +139,14 @@ int main(int argc, char **argv)
             }
             cout<<"当前帧距离最近的二维码: "<<mindistance_id<<endl;
             cout<<"相机在世界坐标系下的位姿"<<endl;
+            cout<<"11111111111111111"<<endl;
             cv2eigen(globalmap->map_markers[mindistance_id].pose_g2m,marker_pose_matrix);
-            t = markermap[mindistance_id]*marker_pose_matrix.inverse()*cam_pose_matrix.inverse();           
+            cout<<"globalmap->map_markers[mindistance_id].pose_g2m"<<globalmap->map_markers[mindistance_id].pose_g2m<<endl;
+            cout<<"marker_pose_matrix"<<marker_pose_matrix<<endl;
+            t = markermap[mindistance_id]*marker_pose_matrix.inverse()*cam_pose_matrix.inverse(); 
+            cout<<"markermap[mindistance_id]"<<markermap[mindistance_id]<<endl;
+            cout<<"marker_pose_matrix"<<marker_pose_matrix<<endl;
+            cout<<"cam_pose_matrix"<<cam_pose_matrix<<endl;
             cout<<t<<endl;                
         }
         std::cout << "发出位姿数据" << std::endl;
@@ -168,10 +174,10 @@ int main(int argc, char **argv)
     Outfile.close();
     //now,  save the map
     if(argc==7){
-        globalmap->saveToFile(argv[6]);
+        globalmap->saveToFile(string(argv[4]));
     }
     if(argc==8){
-        globalmap->saveToFile(argv[7]);
+        globalmap->saveToFile(string(argv[7]));
     }
     
 

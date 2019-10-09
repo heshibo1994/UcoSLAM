@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/talker.dir/src/pg_map.cpp.o"
+  "CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o"
   "/home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker.pdb"
   "/home/dji/catkin_ws_uco/devel/lib/beginner_tutorials/talker"
 )

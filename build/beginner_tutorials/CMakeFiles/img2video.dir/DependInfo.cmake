@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dji/catkin_ws_uco/src/beginner_tutorials/src/pg_map_exposure.cpp" "/home/dji/catkin_ws_uco/build/beginner_tutorials/CMakeFiles/talker.dir/src/pg_map_exposure.cpp.o"
+  "/home/dji/catkin_ws_uco/src/beginner_tutorials/src/img2video.cpp" "/home/dji/catkin_ws_uco/build/beginner_tutorials/CMakeFiles/img2video.dir/src/img2video.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
